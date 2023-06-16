@@ -168,7 +168,7 @@
                     to re-design and upgrade the website for our non-profit client,
                     <a href="https://tuskegeeairmen.org/">Tuskegee Airmen, Inc.</a>
                     <br />
-                    Over the course of the internship, I discussed deliverables with the client,
+                    Over the course of the internship, I planned deliverables with the client,
                     performed user research, mocked and designed changes in Figma,
                     and created a far more engaging, accessible, and successful site.
                 </p>
@@ -220,7 +220,7 @@
                     <li class="list-group-item text-bg-dark">
                         <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project1"
                             aria-expanded="false" aria-controls="project1">
-                            <h3>Caching I/O</h3>
+                            <h3>Caching I/O &dArr;</h3>
                         </button>
                         <div class="collapse" id="project1">
                             <div class="card card-body bg-dark">
@@ -256,7 +256,7 @@
                     <li class="list-group-item text-bg-dark">
                         <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project2"
                             aria-expanded="false" aria-controls="project2">
-                            <h3>On Deck</h3>
+                            <h3>On Deck &dArr;</h3>
                         </button>
                         <div class="collapse" id="project2">
                             <div class="card card-body bg-dark">
@@ -278,6 +278,9 @@
                                             Our app receives user input for their favorite
                                             sports team and pulling from an ESPN API, produces a highly-readable calendar view of all relevant games. 
                                             I utilized mocks, unit and integration testing, and Git. 
+                                            <br />
+                                            Although the back-end is no longer active, 
+                                            you can check out our front-end design <a href="https://on-deck-375716.web.app ">here</a>.
                                         </p>
                                         
                                     </div>
@@ -288,7 +291,7 @@
                     <li class="list-group-item text-bg-dark">
                         <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project3"
                             aria-expanded="false" aria-controls="project3">
-                            <h3>Color-sensing RC Car</h3>
+                            <h3>Search Engine &dArr;</h3>
                         </button>
                         <div class="collapse" id="project3">
                             <div class="card card-body bg-dark">
@@ -299,26 +302,16 @@
                                     </div>
 
                                     <div class="col">
-                                        <h5> <b>Color-sensing RC Car</b></h5>
-                                        <h6 class="text-muted"> RC Car made with an Arduiono and coded in Arduino
-                                            (basically C++) </h6>
-                                        <p> As part of my embedded software course, some friends and I created a
-                                            Color-sensing RC Car with an Arduino</p>
-                                        <p> The car is remote controlled by the button array on a second Arduino we call
-                                            the transmitter. The car requires a WiFi connection as we use the local
-                                            network to send data from the transmitter to the car. Each button represents
-                                            a direction and on a change in state
-                                            (!pressed -> pressed and vice versa) triggers an Interrupt Service Routine
+                                        <h5> <b>Search Engine</b></h5>
+                                        <h6 class="text-muted"> XML Parser and PageRank Algorithm written in Python </h6>
+                                        <p> As part of my algorithms & data structures course, my partner and I
+                                            built a terminal-based search engine. Operating on thousands of XML files in the corpus, 
+                                            we implemented a version of Google's PageRank algorithm to optimize search results.
+                                            <br />
+                                            I wrote functions to index the documents, determine the relevance between terms and documents, andv
+                                            determine the authority of each document.
+                                            Additionally, I parsed, tokenized, and stemmed all of the XML documents.
                                         </p>
-                                        <p> The car features a watchdog for safety, motor drivers which are PWM
-                                            controlled, and it's independently powered.</p>
-                                        <p> Per the "color-sensing" capability, the car responds to color that it
-                                            detects, using a color sensor, below it. It will stop for 2 seconds on Red
-                                            (with a 5 second timer before stopping again), slow down on blue, and speed
-                                            up on green.</p>
-                                        <p> Lastly, we wrote a report for our project. It contains safety and liveness
-                                            concerns, project requirements, finite state machines for the receiver and
-                                            transmitterm and more!</p>
                                     </div>
                                 </div>
                             </div>
@@ -327,7 +320,7 @@
                     <li class="list-group-item text-bg-dark">
                         <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project4"
                             aria-expanded="false" aria-controls="project4">
-                            <h3>Planet Generation</h3>
+                            <h3>Connect 4 AI &dArr;</h3>
                         </button>
                         <div class="collapse" id="project4">
                             <div class="card card-body bg-dark">
@@ -338,21 +331,17 @@
                                     </div>
 
                                     <div class="col">
-                                        <h5> <b>Planet Generation</b></h5>
-                                        <h6 class="text-muted">Custom Planet Generator written in C++ using OpenGL and
-                                            Qt</h6>
-                                        <p>As a final project, my friends and I wrote a planet generator using the
-                                            mystical GPU powers of OpenGL.</p>
-                                        <p>To create your own planet, you can use an on-canvas brush to draw what
-                                            terrain you want to be on the planet. Then we take the brush data, create a
-                                            <b>height map</b> interspersed with <b>perlin noise</b>, and displace the
-                                            vertices of a sphere to create the planet.
+                                        <h5> <b>Connect 4 AI</b></h5>
+                                        <h6 class="text-muted">Connect 4 AI written in ReasonML</h6>
+                                        <p>As a final project, I created a created a terminal-based
+                                            game engine for playing the game Connect 4. 
+                                            <br />
+                                            Beyond supporting 2 human players, I introduced an AI opponent that
+                                            always wins. Following the minimax algorithm, my AI 
+                                            is guaranteed to win at any two-player, sequential, deterministic, 
+                                            zero-sum game of perfect information. 
                                         </p>
-                                        <p>Currently, the planet supports three terrains types (with coloring dependent
-                                            on type): water (the base sphere coordinates), flatland (slightly spiky and
-                                            green), and mountains. On top of this, I implemented a <b>skybox</b> behind
-                                            the planet and a custom <b>toon shader</b> to make the planet look nice :)
-                                        </p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -361,7 +350,7 @@
                     <li class="list-group-item text-bg-dark">
                         <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project5"
                             aria-expanded="false" aria-controls="project5">
-                            <h3>Raytracer</h3>
+                            <h3>GASP &dArr;</h3>
                         </button>
                         <div class="collapse" id="project5">
                             <div class="card card-body bg-dark">
@@ -372,16 +361,19 @@
                                     </div>
 
                                     <div class="col">
-                                        <h5> <b>Raytracer</b></h5>
-                                        <h6 class="text-muted"> C++ Raytracer using Qt Framework</h6>
-                                        <p> A really satisfying project, this was a C++ Raytracer developed from scratch
-                                            with the help of the Qt Framework.</p>
-                                        <p> The Raytracer supports: <b>shadows</b>, <b>recursive reflections and
-                                                refraction</b>, and
-                                            <b>texture mapping</b>. The raytracer was done using <b>Phong
-                                                Illumination</b>, and we load in primitives to the scene with a custom
-                                            scenegraph parser.
+                                        <h5> <b>GASP</b></h5>
+                                        <h6 class="text-muted"> GASP Graphics Program written in Python</h6>
+                                        <p> 
+                                            While working as a software engineering intern at NOVA Web Development, 
+                                            I created a Tkinter wrapper to make graphical programming accessible for novice computer scientists.
+                                            <br />
+                                            As project lead, I programmed the majority of the Python code
+                                            base, documented the logic, and introduced GASP to teachers in Arlington County.
                                         </p>
+                                        <p>
+                                            Check out the code here: <a href="https://codeberg.org/GASP/GASP_Code">codeberg.org/GASP/GASP_Code</a>
+                                        </p>
+                                        
                                     </div>
                                 </div>
                             </div>
