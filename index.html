@@ -25,6 +25,17 @@
          color: darkviolet;
          }
       </style>
+      <script>
+         function toggleArrow(button, title) {
+            var arrowSymbol = document.getElementById('arrowSymbol');
+            
+            if (arrowSymbol.innerHTML === title + ' ⇓') {
+               arrowSymbol.innerHTML = title + ' ⇑';
+            } else {
+               arrowSymbol.innerHTML = title + ' ⇓';
+            }
+         }
+      </script>
    </head>
    <body class="text-bg-dark">
       <nav class="navbar navbar-dark sticky-top bg-primary">
@@ -215,7 +226,7 @@
                <p class="card-text"> 
                   While still in high school, I joined the software development team and quickly developed skills in Django.
                   I coded, tested, and published a graphics program (<a href="https://codeberg.org/GASP/GASP_Code">GASP</a>) for educators to use in their CS courses,
-                  and did so as the lead developer.
+                  all as the lead developer.
                   I also participated in weekly meetings, frequently serving as a bug tester and QA.
                </p>
             </div>
@@ -230,8 +241,8 @@
          <ul class="list-group list-group-flush">
             <li class="list-group-item text-bg-dark">
                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project1"
-                  aria-expanded="false" aria-controls="project1">
-                  <h3>Caching I/O &dArr;</h3>
+                  aria-expanded="false" aria-controls="project1" onclick="toggleArrow(this, 'Caching I/O')">
+                  <h3 id="arrowSymbol">Caching I/O &dArr;</h3>
                </button>
                <div class="collapse" id="project1">
                   <div class="card card-body bg-dark">
@@ -263,8 +274,8 @@
             </li>
             <li class="list-group-item text-bg-dark">
                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project2"
-                  aria-expanded="false" aria-controls="project2">
-                  <h3>On Deck &dArr;</h3>
+                  aria-expanded="false" aria-controls="project2" onclick="toggleArrow(this, 'On Deck')">
+                  <h3 id="arrowSymbol">On Deck &dArr;</h3>
                </button>
                <div class="collapse" id="project2">
                   <div class="card card-body bg-dark">
@@ -295,8 +306,8 @@
             </li>
             <li class="list-group-item text-bg-dark">
                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project3"
-                  aria-expanded="false" aria-controls="project3">
-                  <h3>Search Engine &dArr;</h3>
+                  aria-expanded="false" aria-controls="project3" onclick="toggleArrow(this, 'Search Engine')">
+                  <h3 id="arrowSymbol">Search Engine &dArr;</h3>
                </button>
                <div class="collapse" id="project3">
                   <div class="card card-body bg-dark">
@@ -322,8 +333,8 @@
             </li>
             <li class="list-group-item text-bg-dark">
                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project4"
-                  aria-expanded="false" aria-controls="project4">
-                  <h3>Connect 4 AI &dArr;</h3>
+                  aria-expanded="false" aria-controls="project4" onclick="toggleArrow(this, 'Connect 4 AI')">
+                  <h3 id="arrowSymbol">Connect 4 AI &dArr;</h3>
                </button>
                <div class="collapse" id="project4">
                   <div class="card card-body bg-dark">
@@ -348,10 +359,10 @@
                </div>
             </li>
             <li class="list-group-item text-bg-dark">
-               <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project5"
-                  aria-expanded="false" aria-controls="project5">
-                  <h3>GASP &dArr;</h3>
-               </button>
+              <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#project5"
+                  aria-expanded="false" aria-controls="project5" onclick="toggleArrow(this, 'GASP')">
+            <h3 id="arrowSymbol">GASP &dArr;</h3>
+            </button>
                <div class="collapse" id="project5">
                   <div class="card card-body bg-dark">
                      <div class="row row-cols-2 text-left p-2">
