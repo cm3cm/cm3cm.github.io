@@ -1,0 +1,11 @@
+.nav-link a:link {
+  color: white;
+}
+
+a:link {
+  color: cyan;
+}
+
+a:visited {
+  color: darkviolet;
+}
