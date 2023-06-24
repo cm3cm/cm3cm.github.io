@@ -43,7 +43,12 @@
          <div class="row row-cols-1 row-cols-md-2 text-left p-4">
             <div class="col">
                <div class="text-center">
-                  <img src="images/provplace.webp" class="img-fluid w-75 h-125 border" alt="A nice picture of me!">
+                  <picture>
+                     <source srcset="images/provplace-390x276.webp" media="(max-width: 480px)">
+                     <source srcset="images/provplace-698x495.webp" media="(max-width: 768px)">
+                     <source srcset="images/provplace-914x648.webp" media="(max-width: 992px)">
+                     <img src="images/provplace-914x648.webp" class="img-fluid w-75 h-125 border" alt="A nice picture of me!">
+                  </picture>
                </div>
                <div class="text-center">
                   <img src="images/frisbee.webp" class="img-fluid w-75 h-125 border" alt="Photo of me playing Ultimate">
