@@ -1,4 +1,4 @@
-.nav-link a:link {
+.navbar-dark .navbar-nav .nav-link {
   color: white;
 }
 
@@ -8,4 +8,8 @@ a:link {
 
 a:visited {
   color: darkviolet;
+}
+
+.text-center {
+  padding-bottom: 45px;
 }
