@@ -18,3 +18,7 @@ a:visited {
   color: #0d6efd !important;
   /* Need !import to over-ride the Boostrap */
 }
+
+.form-check-input {
+  border: 1px solid white !important;
+}
