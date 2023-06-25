@@ -4,7 +4,17 @@
     return;
   }
 
+  function setAriaChecked(value) {
+    let switchIcon = document.getElementById("switchIcon");
+    if (!switchIcon) {
+      return;
+    }
+    switchIcon.setAttribute("aria-checked", value);
+  }
+
   function darkMode() {
+    setAriaChecked("true");
+
     document.querySelectorAll(".list-group-item").forEach((element) => {
       element.classList.remove("bg-light");
       element.classList.add("bg-dark");
@@ -56,6 +66,8 @@
   }
 
   function lightMode() {
+    setAriaChecked("false");
+
     document.querySelectorAll(".list-group-item").forEach((element) => {
       element.classList.remove("bg-dark");
       element.classList.add("bg-light");
