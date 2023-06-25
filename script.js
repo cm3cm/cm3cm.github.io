@@ -54,7 +54,16 @@ projects.forEach((project) => {
   listItem.className = "list-group-item text-bg-dark";
 
   const button = document.createElement("button");
-  button.className = "btn btn-dark";
+  button.className = "btn";
+
+  if (lightSwitch.checked) {
+    button.classList.add("btn-dark");
+    button.classList.add("text-white");
+  } else {
+    button.classList.add("btn-light");
+    button.classList.add("text-dark");
+  }
+
   button.setAttribute("type", "button");
   button.setAttribute("data-bs-toggle", "collapse");
   button.setAttribute("data-bs-target", `#${project.id}`);
@@ -64,7 +73,7 @@ projects.forEach((project) => {
 
   const buttonTitle = document.createElement("h3");
   buttonTitle.className = "arrowSymbol";
-  buttonTitle.innerHTML = project.title;
+  buttonTitle.innerHTML = `${project.title} ⇓`
 
   button.appendChild(buttonTitle);
   listItem.appendChild(button);

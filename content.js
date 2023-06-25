@@ -48,7 +48,7 @@ const cardData = [
 const projects = [
   {
     id: "project1",
-    title: "Caching I/O ⇓",
+    title: "Caching I/O",
     imgSrc: "images/ProjectPics/caching-io.webp",
     imgAlt: "Alt for project 1 pic",
     subtitle: "Input/Output Library written in C",
@@ -71,7 +71,7 @@ const projects = [
   },
   {
     id: "project2",
-    title: "On Deck ⇓",
+    title: "On Deck",
     imgSrc: "images/ProjectPics/on-deck.webp",
     imgAlt: "Alt for project 2 pic",
     subtitle: "Full-Stack Web App written in Java, React.js, and TypeScript",
@@ -97,7 +97,7 @@ const projects = [
   },
   {
     id: "project3",
-    title: "Search Engine ⇓",
+    title: "Search Engine",
     imgSrc: "images/ProjectPics/search-diagram.webp",
     imgAlt: "Alt for project 3 pic",
     subtitle: "XML Parser and PageRank Algorithm written in Python",
@@ -117,7 +117,7 @@ const projects = [
   },
   {
     id: "project4",
-    title: "Connect 4 AI ⇓",
+    title: "Connect 4 AI",
     imgSrc: "images/ProjectPics/connect4-ai.webp",
     imgAlt: "Alt for project 4 pic",
     subtitle: "Connect 4 AI written in ReasonML",
@@ -135,7 +135,7 @@ const projects = [
   },
   {
     id: "project5",
-    title: "GASP ⇓",
+    title: "GASP",
     imgSrc: "images/ProjectPics/gasp.webp",
     imgAlt: "Alt for project 5 pic",
     subtitle: "GASP Graphics Program written in Python",

@@ -12,6 +12,18 @@
       element.classList.add("text-light");
     });
 
+    document.querySelectorAll(".btn").forEach((element) => {
+      element.classList.remove("btn-light");
+      element.classList.add("btn-dark");
+      element.classList.remove("text-dark");
+      element.classList.add("text-white");
+    });
+
+    document.querySelectorAll(".text-white").forEach((element) => {
+      element.classList.remove("text-white");
+      element.classList.add("text-dark");
+    });
+
     document.querySelectorAll(".bg-light").forEach((element) => {
       element.className = element.className.replace(/-light/g, "-dark");
     });
@@ -48,6 +60,19 @@
       element.classList.add("bg-light");
       element.classList.remove("text-light");
       element.classList.add("text-dark");
+    });
+
+    document.querySelectorAll(".btn").forEach((element) => {
+      console.log("btn light");
+      element.classList.remove("btn-dark");
+      element.classList.add("btn-light");
+      element.classList.remove("text-white");
+      element.classList.add("text-dark");
+    });
+
+    document.querySelectorAll(".text-dark").forEach((element) => {
+      element.classList.remove("text-dark");
+      element.classList.add("text-white");
     });
 
     document.querySelectorAll(".bg-dark").forEach((element) => {
