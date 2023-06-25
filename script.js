@@ -56,40 +56,6 @@ const cardData = [
   },
 ];
 
-const cardContainer = document.getElementById("cardContainer");
-
-cardData.forEach((data) => {
-  const card = document.createElement("div");
-  card.className = "card bg-dark";
-
-  const cardBody = document.createElement("div");
-  cardBody.className = "card-body bg-dark";
-
-  const title = document.createElement("h5");
-  title.className = "card-title";
-  title.textContent = data.title;
-
-  const company = document.createElement("h6");
-  company.className = "text-muted";
-  company.textContent = data.company;
-
-  const date = document.createElement("h6");
-  date.className = "text-muted";
-  date.textContent = data.date;
-
-  const description = document.createElement("p");
-  description.className = "card-text";
-  description.innerHTML = data.description;
-
-  cardBody.appendChild(title);
-  cardBody.appendChild(company);
-  cardBody.appendChild(date);
-  cardBody.appendChild(description);
-
-  card.appendChild(cardBody);
-  cardContainer.appendChild(card);
-});
-
 const projects = [
   {
     id: "project1",
@@ -200,6 +166,40 @@ const projects = [
     `,
   },
 ];
+
+const cardContainer = document.getElementById("cardContainer");
+
+cardData.forEach((data) => {
+  const card = document.createElement("div");
+  card.className = "card bg-dark";
+
+  const cardBody = document.createElement("div");
+  cardBody.className = "card-body bg-dark";
+
+  const title = document.createElement("h5");
+  title.className = "card-title";
+  title.textContent = data.title;
+
+  const company = document.createElement("h6");
+  company.className = "text-muted";
+  company.textContent = data.company;
+
+  const date = document.createElement("h6");
+  date.className = "text-muted";
+  date.textContent = data.date;
+
+  const description = document.createElement("p");
+  description.className = "card-text";
+  description.innerHTML = data.description;
+
+  cardBody.appendChild(title);
+  cardBody.appendChild(company);
+  cardBody.appendChild(date);
+  cardBody.appendChild(description);
+
+  card.appendChild(cardBody);
+  cardContainer.appendChild(card);
+});
 
 const projectList = document.getElementById("projectList");
 
