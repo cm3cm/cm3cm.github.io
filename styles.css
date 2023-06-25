@@ -13,3 +13,8 @@ a:visited {
 .text-center {
   padding-bottom: 45px;
 }
+
+.text-info {
+  color: #0d6efd !important;
+  /* Need !import to over-ride the Boostrap */
+}

@@ -26,11 +26,11 @@ cardData.forEach((data) => {
   title.textContent = data.title;
 
   const company = document.createElement("h6");
-  company.className = "text-muted";
+  company.className = "text-info";
   company.textContent = data.company;
 
   const date = document.createElement("h6");
-  date.className = "text-muted";
+  date.className = "text-info small";
   date.textContent = data.date;
 
   const description = document.createElement("p");
@@ -96,7 +96,7 @@ projects.forEach((project) => {
   title.innerHTML = `<b>${project.title}</b>`;
 
   const subtitle = document.createElement("h6");
-  subtitle.className = "text-muted";
+  subtitle.className = "text-info";
   subtitle.innerHTML = project.subtitle;
 
   const description = document.createElement("div");
