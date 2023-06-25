@@ -11,6 +11,7 @@ function toggleArrow(button) {
   }
 }
 
+// Create the Experience cards
 const cardContainer = document.getElementById("cardContainer");
 
 cardData.forEach((data) => {
@@ -45,6 +46,7 @@ cardData.forEach((data) => {
   cardContainer.appendChild(card);
 });
 
+// Create the Projects list items
 const projectList = document.getElementById("projectList");
 
 projects.forEach((project) => {
