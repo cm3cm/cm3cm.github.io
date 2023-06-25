@@ -1,4 +1,4 @@
-import { cardData, projects } from "./content.js";
+import { cardData, projects, svgData } from "./content.js";
 
 function toggleArrow(button) {
   var arrowSymbol = button.querySelector(".arrowSymbol");
@@ -114,4 +114,45 @@ projects.forEach((project) => {
 
   listItem.appendChild(collapseDiv);
   projectList.appendChild(listItem);
+});
+
+// Create the SVG elements and their links
+const linksContainer = document.getElementById("links");
+
+svgData.forEach((link) => {
+  const linkElement = document.createElement("div");
+  linkElement.className = "col";
+
+  const linkAnchor = document.createElement("a");
+  linkAnchor.className = "btn btn-primary";
+  linkAnchor.href = link.href;
+  linkAnchor.role = "button";
+  linkAnchor.setAttribute("data-bs-toggle", "tooltip");
+  linkAnchor.style.color = "white";
+  linkAnchor.setAttribute("data-bs-title", link.tooltip);
+  linkAnchor.setAttribute("data-bs-trigger", "hover focus");
+  linkAnchor.target = "_blank";
+
+  const iconSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  iconSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  iconSvg.setAttribute("width", "16");
+  iconSvg.setAttribute("height", "16");
+  iconSvg.setAttribute("fill", "currentColor");
+  iconSvg.setAttribute("class", `bi ${link.icon}`);
+  iconSvg.setAttribute("viewBox", "0 0 16 16");
+  iconSvg.setAttribute("role", "img");
+  iconSvg.setAttribute("aria-label", link.tooltip);
+
+  const iconPath = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "path"
+  );
+  iconPath.setAttribute("d", link.path);
+  iconSvg.appendChild(iconPath);
+
+  linkAnchor.appendChild(iconSvg);
+
+  linkElement.appendChild(linkAnchor);
+
+  linksContainer.appendChild(linkElement);
 });
