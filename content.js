@@ -3,7 +3,7 @@ const cardData = [
     title: "Software Engineering Intern",
     company: "BTS Asset Management",
     date: "June 2023 — Present",
-    description: `As an intern, I researched existing workflow inefficiencies,
+    description: `As an intern, I researched existing workflow inefficiencies
                   and boosted employee productivity by automating
                   numerous processes. 
                   Primarily working in Python, I utilized Pandas, Numpy, 
@@ -18,7 +18,7 @@ const cardData = [
                   to re-design and upgrade the website for our non-profit client,
                   <a href="https://tuskegeeairmen.org/">Tuskegee Airmen, Inc.</a>
                   <br />
-                  Over the course of the internship, I planned deliverables with the client,
+                  Throughout the internship, I planned deliverables with the client,
                   performed user research, mocked and designed changes in Figma,
                   and created a far more engaging, accessible, and successful site.`,
   },
@@ -27,8 +27,8 @@ const cardData = [
     company: "Brown University",
     date: "August 2022 — December 2022",
     description: `I worked as a TA for Brown's introductory 
-                  computer sciences course, <a href="https://cs17-fall2022.github.io/">CS17</a>, which had 
-                  over 100 students enrolled. 
+                  computer sciences course, <a href="https://cs17-fall2022.github.io/">CS17</a>,
+                  with over 100 students enrolled. 
                   During the semester, I wrote and revised course content to meet new standards.
                   <br />
                   Additionally, I led weekly CS labs for 25 students and graded their assignments and projects.
@@ -56,13 +56,13 @@ const projects = [
       <p>
         Designed and implemented a cache-driven file I/O library 
         for my computer systems course.
-        I began with a thorough brainstorm, design, and pseudo-code process 
+        I began with a thorough brainstorming, design, and pseudo-code process 
         to ensure I grasped the content.
         As I implemented the project, I greatly advanced my understanding of 
         C programming, memory optimization,
         and system calls.
         <br />
-        The code has support for opening, closing, seeking, reading, and writing, 
+        The code has support for opening, closing, seeking, reading, writing, 
         and many other useful file operations.
         Through a clever caching design, my program ran faster than the 
         standard C I/O library for certain read & write patterns.
@@ -78,7 +78,7 @@ const projects = [
     description: `
       <p>
         As the culminating project of my software engineering course,
-        I worked on a team of 4 to create a web application with real-world use cases.
+        I worked in a team of 4 to create a web application with real-world use cases.
         We pitched our proposal to a mentor, received feedback, and created 
         user stories and acceptance criteria.
         After designing the proposal in Figma, we sought out user 
@@ -123,7 +123,7 @@ const projects = [
     subtitle: "Connect 4 AI written in ReasonML",
     description: `
       <p>
-        As a final project, I created a created a terminal-based
+        As a final project, I created a terminal-based
         game engine for playing the game Connect 4. 
         <br />
         Beyond supporting 2 human players, I introduced an AI opponent that
