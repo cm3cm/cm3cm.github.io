@@ -73,7 +73,7 @@ projects.forEach((project) => {
 
   const buttonTitle = document.createElement("h3");
   buttonTitle.className = "arrowSymbol";
-  buttonTitle.innerHTML = `${project.title} ⇓`
+  buttonTitle.innerHTML = `${project.title} ⇓`;
 
   button.appendChild(buttonTitle);
   listItem.appendChild(button);
@@ -133,7 +133,7 @@ svgData.forEach((link) => {
   linkElement.className = "col";
 
   const linkAnchor = document.createElement("a");
-  linkAnchor.className = "btn btn-primary";
+  linkAnchor.className = "btn btn-primary color-exempt";
   linkAnchor.href = link.href;
   linkAnchor.role = "button";
   linkAnchor.setAttribute("data-bs-toggle", "tooltip");

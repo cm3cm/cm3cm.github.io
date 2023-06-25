@@ -14,9 +14,10 @@ a:visited {
   padding-bottom: 45px;
 }
 
+/* Need !important to override the Boostrap */
+
 .text-info {
   color: #0d6efd !important;
-  /* Need !import to over-ride the Boostrap */
 }
 
 .form-check-input {

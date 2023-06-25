@@ -12,7 +12,8 @@
       element.classList.add("text-light");
     });
 
-    document.querySelectorAll(".btn").forEach((element) => {
+    document.querySelectorAll(".btn:not(.color-exempt)").forEach((element) => {
+      // don't select the resume/linkedin/github/email link buttons
       element.classList.remove("btn-light");
       element.classList.add("btn-dark");
       element.classList.remove("text-dark");
@@ -62,8 +63,8 @@
       element.classList.add("text-dark");
     });
 
-    document.querySelectorAll(".btn").forEach((element) => {
-      console.log("btn light");
+    document.querySelectorAll(".btn:not(.color-exempt)").forEach((element) => {
+      // don't select the resume/linkedin/github/email link buttons
       element.classList.remove("btn-dark");
       element.classList.add("btn-light");
       element.classList.remove("text-white");
