@@ -69,7 +69,9 @@ projects.forEach((project) => {
   button.setAttribute("data-bs-target", `#${project.id}`);
   button.setAttribute("aria-expanded", "false");
   button.setAttribute("aria-controls", project.id);
-  button.setAttribute("onclick", "toggleArrow(this)");
+  button.addEventListener("click", function () {
+    toggleArrow(this);
+  });
 
   const buttonTitle = document.createElement("h3");
   buttonTitle.className = "arrowSymbol";
