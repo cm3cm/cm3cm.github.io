@@ -4,6 +4,7 @@
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
+  text-decoration: underline;
 }
 
 a:link {
