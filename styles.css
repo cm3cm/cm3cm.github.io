@@ -20,6 +20,23 @@ a:visited {
   border-radius: 4px;
 }
 
+/* Default layout for larger viewports */
+#links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Media query for small viewports */
+@media (max-width: 576px) {
+  #links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px 5px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
 /* Need !important to override the Boostrap */
 
 .text-info {
