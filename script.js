@@ -137,9 +137,9 @@ const linksContainer = document.getElementById("links");
 
 let svgNewDim;
 if (window.innerWidth >= 768) {
-  svgNewDim = 24;
+  svgNewDim = 26;
 } else {
-  svgNewDim = 16;
+  svgNewDim = 18;
 }
 
 svgData.forEach((link) => {
@@ -190,4 +190,5 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 tooltipList.forEach(function (tooltip) {
   tooltip.show();
+  tooltip.tip.style.fontSize = Math.max(12, svgNewDim / 2) + "px";
 });
