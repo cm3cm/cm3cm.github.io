@@ -141,7 +141,7 @@ svgData.forEach((link) => {
   linkAnchor.setAttribute("data-bs-toggle", "tooltip");
   linkAnchor.style.color = "white";
   linkAnchor.setAttribute("data-bs-title", link.tooltip);
-  linkAnchor.setAttribute("data-bs-trigger", "hover focus");
+  linkAnchor.setAttribute("data-bs-trigger", "manual");
   linkAnchor.target = "_blank";
 
   const iconSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -166,4 +166,15 @@ svgData.forEach((link) => {
   linkElement.appendChild(linkAnchor);
 
   linksContainer.appendChild(linkElement);
+});
+
+// always display all the tooltip labels 
+const tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+tooltipList.forEach(function (tooltip) {
+  tooltip.show();
 });

@@ -14,6 +14,12 @@ a:visited {
   padding-bottom: 45px;
 }
 
+.tooltip {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
 /* Need !important to override the Boostrap */
 
 .text-info {
