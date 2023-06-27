@@ -1,4 +1,9 @@
-import { cardData, projects, svgData } from "./content.js";
+import {
+  cardData,
+  projects,
+  svgData,
+  svgDimension as svgOrigDim,
+} from "./content.js";
 
 function toggleArrow(button) {
   var arrowSymbol = button.querySelector(".arrowSymbol");
@@ -130,6 +135,13 @@ projects.forEach((project) => {
 // Create the SVG elements and their links
 const linksContainer = document.getElementById("links");
 
+let svgNewDim;
+if (window.innerWidth >= 768) {
+  svgNewDim = 24;
+} else {
+  svgNewDim = 16;
+}
+
 svgData.forEach((link) => {
   const linkElement = document.createElement("div");
   linkElement.className = "col";
@@ -146,11 +158,11 @@ svgData.forEach((link) => {
 
   const iconSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   iconSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-  iconSvg.setAttribute("width", "16");
-  iconSvg.setAttribute("height", "16");
+  iconSvg.setAttribute("width", svgNewDim);
+  iconSvg.setAttribute("height", svgNewDim);
   iconSvg.setAttribute("fill", "currentColor");
   iconSvg.setAttribute("class", `bi ${link.icon}`);
-  iconSvg.setAttribute("viewBox", "0 0 16 16");
+  iconSvg.setAttribute("viewBox", `0 0 ${svgNewDim} ${svgNewDim}`);
   iconSvg.setAttribute("role", "img");
   iconSvg.setAttribute("aria-label", link.tooltip);
 
@@ -159,6 +171,7 @@ svgData.forEach((link) => {
     "path"
   );
   iconPath.setAttribute("d", link.path);
+  iconPath.setAttribute("transform", `scale(${svgNewDim / svgOrigDim})`);
   iconSvg.appendChild(iconPath);
 
   linkAnchor.appendChild(iconSvg);
@@ -168,7 +181,7 @@ svgData.forEach((link) => {
   linksContainer.appendChild(linkElement);
 });
 
-// always display all the tooltip labels 
+// always display all the tooltip labels
 const tooltipTriggerList = [].slice.call(
   document.querySelectorAll('[data-bs-toggle="tooltip"]')
 );
