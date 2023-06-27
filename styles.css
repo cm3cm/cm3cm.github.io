@@ -1,3 +1,7 @@
+.navbar {
+  z-index: 101;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
@@ -15,12 +19,13 @@ a:visited {
 }
 
 .tooltip {
+  z-index: 100;
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 4px;
 }
 
-/* Default layout for larger viewports */
+/* Default for medium & large viewports */
 #links {
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +43,6 @@ a:visited {
 }
 
 /* Need !important to override the Boostrap */
-
 .text-info {
   color: #0d6efd !important;
 }
