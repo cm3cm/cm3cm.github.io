@@ -1,9 +1,4 @@
-import {
-  cardData,
-  projects,
-  svgData,
-  svgDimension as svgOrigDim,
-} from "./content.js";
+import { cardData, projects, svgData } from "./content.js";
 
 function toggleArrow(button) {
   var arrowSymbol = button.querySelector(".arrowSymbol");
@@ -171,7 +166,7 @@ svgData.forEach((link) => {
     "path"
   );
   iconPath.setAttribute("d", link.path);
-  iconPath.setAttribute("transform", `scale(${svgNewDim / svgOrigDim})`);
+  iconPath.setAttribute("transform", `scale(${svgNewDim / link.origDim})`);
   iconSvg.appendChild(iconPath);
 
   linkAnchor.appendChild(iconSvg);
