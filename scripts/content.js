@@ -8,7 +8,10 @@ const cardData = [
                   numerous processes. 
                   Primarily working in Python, I utilized Pandas, Numpy, 
                   and Matplotlib to save the firm hundreds of hours of 
-                  work each quarter. `,
+                  work each quarter.
+                  I accessed financial data through API calls, processed
+                  and analyzed the information, and produced descriptive
+                  charts, Excels, and tables for internal and marketing use.`,
   },
   {
     title: "Software Design Intern",
@@ -19,8 +22,10 @@ const cardData = [
                   <a href="https://tuskegeeairmen.org/">Tuskegee Airmen, Inc.</a>
                   <br />
                   Throughout the internship, I planned deliverables with the client,
-                  performed user research, mocked and designed changes in Figma,
-                  and created a far more engaging, accessible, and successful site.`,
+                  performed user research, mocked and designed pages in Figma,
+                  and created a far more engaging, accessible, and successful site.
+                  I implemented responsive web designs, improved page navigation,
+                  and created re-usable elements.`,
   },
   {
     title: "Teaching Assistant: CSCI0170",
