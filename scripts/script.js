@@ -1,4 +1,4 @@
-import { cardData, projects, svgData } from "./content.js";
+import { experience, projects, svgData } from "./content.js";
 
 function toggleArrow(button) {
   var arrowSymbol = button.querySelector(".arrowSymbol");
@@ -14,7 +14,7 @@ function toggleArrow(button) {
 // Create the Experience cards
 const cardContainer = document.getElementById("cardContainer");
 
-cardData.forEach((data) => {
+experience.forEach((data) => {
   const card = document.createElement("div");
   card.className = "card bg-dark";
 

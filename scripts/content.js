@@ -1,4 +1,4 @@
-const cardData = [
+const experience = [
   {
     title: "Software Engineering Intern",
     company: "BTS Asset Management",
@@ -196,4 +196,4 @@ const svgData = [
   },
 ];
 
-export { cardData, projects, svgData };
+export { experience, projects, svgData };
