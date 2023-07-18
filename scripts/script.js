@@ -33,6 +33,10 @@ experience.forEach((data) => {
   date.className = "text-info small";
   date.textContent = data.date;
 
+  const location = document.createElement("h6");
+  location.className = "text-info small";
+  location.textContent = data.location;
+
   const description = document.createElement("p");
   description.className = "card-text";
   description.innerHTML = data.description;
@@ -40,6 +44,7 @@ experience.forEach((data) => {
   cardBody.appendChild(title);
   cardBody.appendChild(company);
   cardBody.appendChild(date);
+  cardBody.appendChild(location);
   cardBody.appendChild(description);
 
   card.appendChild(cardBody);
