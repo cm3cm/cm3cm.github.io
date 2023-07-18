@@ -29,9 +29,10 @@ const experience = [
                   <br />
                   Throughout the internship, I planned deliverables with the client
                   and my team.
-                  I conducted user research to identify shortcomings and 
-                  areas for improvement in the existing site's design and UX.
-                  In Figma, I created wireframes, wock-ups, prototypes, and re-usable elements.
+                  I conducted user research, such as a card sorting test, to identify shortcomings and 
+                  areas for improvement in the existing site's design and UX, 
+                  then ameliorated these issues and followed up with the research subjects.
+                  In Figma, I created wireframes, mock-ups, prototypes, and re-usable elements.
                   I implemented responsive web design and improved page navigation.
                   `,
   },
@@ -41,9 +42,11 @@ const experience = [
     date: "August 2022 — December 2022",
     location: "Providence, RI",
     description: `I worked as a TA for Brown's introductory 
-                  computer sciences course, <a href="https://cs17-fall2022.github.io/">CS17</a>,
+                  computer science course, <a href="https://cs17-fall2022.github.io/">CS17</a>,
                   with over 100 students enrolled. 
                   During the semester, I wrote and revised course content to meet new standards.
+                  I met weekly with my colleagues and the professor to assess the curriculum
+                  and prepare upcoming material. 
                   <br />
                   Additionally, I led weekly CS labs for 25 students and promptly graded their assignments and projects.
                   I assisted students one-on-one during office hours and through questions submitted online.`,
@@ -55,8 +58,14 @@ const experience = [
     location: "Arlington, VA",
     description: `While still in high school, I joined the software development team and quickly developed skills in Django.
                   I coded, tested, and published a graphics program (<a href="https://codeberg.org/GASP/GASP_Code">GASP</a>) for educators to use in their CS courses,
-                  all as the lead developer. The program is now available for download on PyPI and receives
-                  aproximately 100 downloads each month. 
+                  all as the lead developer. 
+                  I followed OOP principles and test-driven development, ensuring
+                  a thorough test suite. 
+                  I wrote the documentation and a how-to guide for teachers to introduce GASP in their classes.
+                  <br />
+                  The program is now available for download on 
+                  <a href="https://pypi.org/project/gasp/">PyPI</a> 
+                  and receives aproximately 100 downloads each month. 
                   I also participated in weekly meetings, frequently serving as a bug tester and QA.`,
   },
 ];
@@ -136,7 +145,7 @@ const projects = [
     title: "Connect 4 AI",
     imgSrc: "images/ProjectPics/connect4-ai.webp",
     imgAlt: "Alt for project 4 pic",
-    subtitle: "Connect 4 AI written in ReasonML",
+    subtitle: "Guaranteed Win AI written in ReasonML",
     description: `
       <p>
         As a final project, I created a terminal-based
@@ -154,16 +163,19 @@ const projects = [
     title: "GASP",
     imgSrc: "images/ProjectPics/gasp.webp",
     imgAlt: "Alt for project 5 pic",
-    subtitle: "GASP Graphics Program written in Python",
+    subtitle: "Graphics API for Students of Python written in Python",
     description: `
       <p> 
         While working as a software engineering intern at NOVA Web Development, 
         I created a Tkinter wrapper to make graphical programming accessible 
         for novice computer scientists.
+        The project receives approximately 100 downloads each month from PyPI.
+        I collaborated with my manager and another
+        intern through Git branches, merging, issues, and pull requests. 
         <br />
-        As project lead, I programmed the majority of the Python code
+        As the project lead, I programmed the majority of the Python code
         base, documented the logic, and introduced GASP to teachers in Arlington County.
-        I also help design activities for teachers to use with GASP. 
+        I also helped design activities for teachers to use with GASP. 
       </p>
       <p>
         <a href="https://codeberg.org/GASP/GASP_Code">Check out the code here</a>.
