@@ -7,7 +7,7 @@ const experience = [
     description: `As an intern, I researched existing workflow inefficiencies
                   and boosted employee productivity by automating
                   numerous processes. 
-                  Primarily working in Python, I utilized Pandas, Numpy, 
+                  Primarily working in Python, I utilized Pandas, NumPy, 
                   and Matplotlib to save the firm hundreds of hours of 
                   work each quarter.
                   I accessed financial data through API calls, processed
