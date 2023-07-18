@@ -29,7 +29,7 @@ const experience = [
                   <br />
                   Throughout the internship, I planned deliverables with the client
                   and my team.
-                  I conducted user research, such as a card sorting test, to identify shortcomings and 
+                  I conducted user research, such as card sorting tests, to identify shortcomings and 
                   areas for improvement in the existing site's design and UX, 
                   then ameliorated these issues and followed up with the research subjects.
                   In Figma, I created wireframes, mock-ups, prototypes, and re-usable elements.
@@ -106,13 +106,17 @@ const projects = [
         I worked in a team of 4 to create a web application with real-world use cases.
         We pitched our proposal to a mentor, received feedback, and created 
         user stories and acceptance criteria.
-        After designing the proposal in Figma, we sought out user 
-        feedback and made improvements.
+        After designing the app with wireframes in Figma, we sought out user 
+        feedback and made improvements for accessibility.
         <br />
-        Our app receives user input for their favorite sports team and 
+        Our app receives user input for their favorite sports team and, by 
         pulling from an ESPN API,
-        produces a highly-readable calendar view of all relevant games.
-        I utilized mocks, unit and integration testing, and Git.
+        produces a highly-readable calendar view of the all relevant games.
+        I utilized mocks, object-oriented programming, 
+        unit and integration testing, and Git.
+        Since I was programming in a team, I had to manage our
+        deliverables schedule, coordinate between front-end and back-end, 
+        and spearhead the final presentation to our mentor. 
         <br />
         Although the back-end is no longer active,
         you can check out 
@@ -145,14 +149,14 @@ const projects = [
     title: "Connect 4 AI",
     imgSrc: "images/ProjectPics/connect4-ai.webp",
     imgAlt: "Alt for project 4 pic",
-    subtitle: "Guaranteed Win AI written in ReasonML",
+    subtitle: "AI Guaranteed to Win written in ReasonML",
     description: `
       <p>
         As a final project, I created a terminal-based
         game engine for playing the game Connect 4. 
         <br />
         Beyond supporting 2 human players, I introduced an AI opponent that
-        always wins. Following the minimax algorithm, my AI 
+        always wins—I could never beat it! Utilizing the minimax algorithm, my AI 
         is guaranteed to win at any two-player, sequential, deterministic, 
         zero-sum game of perfect information. 
       </p>
