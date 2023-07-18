@@ -3,6 +3,7 @@ const experience = [
     title: "Software Engineering Intern",
     company: "BTS Asset Management",
     date: "June 2023 — Present",
+    location: "Remote",
     description: `As an intern, I researched existing workflow inefficiencies
                   and boosted employee productivity by automating
                   numerous processes. 
@@ -11,41 +12,51 @@ const experience = [
                   work each quarter.
                   I accessed financial data through API calls, processed
                   and analyzed the information, and produced descriptive
-                  charts, Excels, and tables for internal and marketing use.`,
+                  charts, Excels, and tables for internal and marketing use.
+                  <br />
+                  I spearheaded the project for the financial firm and 
+                  collaborated with non-technical employees to ensure
+                  their goals were achieved.`,
   },
   {
     title: "Software Design Intern",
     company: "Develop for Good",
     date: "May 2023 — Present",
+    location: "Remote",
     description: `I joined a team of 8 designers 
                   to re-design and upgrade the website for our non-profit client,
                   <a href="https://tuskegeeairmen.org/">Tuskegee Airmen, Inc.</a>
                   <br />
-                  Throughout the internship, I planned deliverables with the client,
-                  performed user research, mocked and designed pages in Figma,
-                  and created a far more engaging, accessible, and successful site.
-                  I implemented responsive web designs, improved page navigation,
-                  and created re-usable elements.`,
+                  Throughout the internship, I planned deliverables with the client
+                  and my team.
+                  I conducted user research to identify shortcomings and 
+                  areas for improvement in the existing site's design and UX.
+                  In Figma, I created wireframes, wock-ups, prototypes, and re-usable elements.
+                  I implemented responsive web design and improved page navigation.
+                  `,
   },
   {
     title: "Teaching Assistant: CSCI0170",
     company: "Brown University",
     date: "August 2022 — December 2022",
+    location: "Providence, RI",
     description: `I worked as a TA for Brown's introductory 
                   computer sciences course, <a href="https://cs17-fall2022.github.io/">CS17</a>,
                   with over 100 students enrolled. 
                   During the semester, I wrote and revised course content to meet new standards.
                   <br />
-                  Additionally, I led weekly CS labs for 25 students and graded their assignments and projects.
+                  Additionally, I led weekly CS labs for 25 students and promptly graded their assignments and projects.
                   I assisted students one-on-one during office hours and through questions submitted online.`,
   },
   {
     title: "Software Development Intern",
     company: "NOVA Web Development",
     date: "March 2020 — September 2020",
+    location: "Arlington, VA",
     description: `While still in high school, I joined the software development team and quickly developed skills in Django.
                   I coded, tested, and published a graphics program (<a href="https://codeberg.org/GASP/GASP_Code">GASP</a>) for educators to use in their CS courses,
-                  all as the lead developer.
+                  all as the lead developer. The program is now available for download on PyPI and receives
+                  aproximately 100 downloads each month. 
                   I also participated in weekly meetings, frequently serving as a bug tester and QA.`,
   },
 ];
