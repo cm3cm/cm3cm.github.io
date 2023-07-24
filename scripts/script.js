@@ -25,7 +25,7 @@ experience.forEach((data) => {
   title.className = "card-title";
   title.textContent = data.title;
 
-  const company = document.createElement("h6");
+  const company = document.createElement("h5");
   company.className = "text-info";
   company.textContent = data.company;
 
