@@ -34,6 +34,10 @@ const experience = [
                   then ameliorated these issues and followed up with the research subjects.
                   In Figma, I created wireframes, mock-ups, prototypes, and re-usable elements.
                   I implemented responsive web design and improved page navigation.
+                  To bolster their social media presence, I introduced templates 
+                  they could utilize for recurring posts 
+                  (event announcements, member spotlights, organization news, etc.),
+                  styled in accordance with their brand guidelines. 
                   `,
   },
   {
