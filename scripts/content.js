@@ -2,26 +2,32 @@ const experience = [
   {
     title: "Software Engineering Intern",
     company: "BTS Asset Management",
-    date: "June 2023 — Present",
-    location: "Remote",
+    date: "June 2023 — September 2023",
+    location: "Lincoln, MA",
     description: `As an intern, I researched existing workflow inefficiencies
                   and boosted employee productivity by automating
                   numerous processes. 
                   Primarily working in Python, I utilized Pandas, NumPy, 
-                  and Matplotlib to save the firm hundreds of hours of 
+                  and Matplotlib to save the firm over one hundred hours of 
                   work each quarter.
                   I accessed financial data through API calls, processed
                   and analyzed the information, and produced descriptive
-                  charts, Excels, and tables for internal and marketing use.
+                  charts, Excel files, and tables for internal and marketing use.
                   <br />
-                  I spearheaded the project for the financial firm and 
+                  I	engineered a web application to display and evaluate
+                  technical analysis investment models with a Python & Django
+                  back end and JavaScript & React.js front end,
+                  including developing a REST API.
+                  <br />
+                  I spearheaded these two project for the financial firm and 
                   collaborated with non-technical employees to ensure
-                  their goals were achieved.`,
+                  their goals were achieved.
+                  `,
   },
   {
     title: "Software Design Intern",
     company: "Develop for Good",
-    date: "May 2023 — Present",
+    date: "May 2023 — August 2023",
     location: "Remote",
     description: `I joined a team of 8 designers 
                   to re-design and upgrade the website for our non-profit client,
@@ -34,6 +40,8 @@ const experience = [
                   then ameliorated these issues and followed up with the research subjects.
                   In Figma, I created wireframes, mock-ups, prototypes, and re-usable elements.
                   I implemented responsive web design and improved page navigation.
+                  My final design proved 40% faster for common user journeys than the
+                  existing design. 
                   To bolster their social media presence, I introduced templates 
                   they could utilize for recurring posts 
                   (event announcements, member spotlights, organization news, etc.),
