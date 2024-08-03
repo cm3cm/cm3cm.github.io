@@ -1,4 +1,20 @@
-const experience = [
+export const experience = [
+  {
+    title: "Software Engineering Intern",
+    company: "Chicago Cubs",
+    date: "June 2024 — August 2024",
+    location: "Chicago, IL",
+    description: `
+                  I joined the Cubs Baseball Systems team, part of the Cubs R&D department.
+                  I built software for internal baseball operations project, such as
+                  designing a new internal webpage for our catching coaches to share and assess in
+                  advanced baseball analytics through dynamic tables and charts.
+                  <br />
+                  Primarily I worked in React and Redux, while occassionally programming with Angular.
+                  I scripted SQL queries and Python modules to expand our automated data flow to our databases and caches.
+                  Throughout this, I followed an Agile process and frequently checked in with my shareholders.
+                  `,
+  },
   {
     title: "Software Engineering Intern",
     company: "BTS Asset Management",
@@ -82,7 +98,26 @@ const experience = [
   },
 ];
 
-const projects = [
+export const projects = [
+  {
+    id: "project0",
+    title: "Go Deep!",
+    imgSrc: "images/ProjectPics/go-deep.webp",
+    imgAlt: "Alt for project 0 pic",
+    subtitle: "Deep Neural Network Machine Learning Project",
+    description: `
+      <p>
+        Working in a team, we modified an existing paper called DeepQB
+        that aims to bring deep learning techniques to football analytics,
+        primarily looking at how quarterbacks
+        make split-second decisions on the field.
+        Our model was trained for 10 epochs with a batch size of 128 and the Adam optimizer at a learning rate of 0.001.
+        After training, our model which uses softmax activation to represent the receiver target variant,
+        achieved a validation accuracy of over 40% and a validation loss of approximately 1.
+        This performance was twice as successful as a naive implementation.
+      </p>
+    `,
+  },
   {
     id: "project1",
     title: "Caching I/O",
@@ -200,7 +235,7 @@ const projects = [
   },
 ];
 
-const svgData = [
+export const svgData = [
   {
     href: "resources/CalebMoran-resume.pdf",
     icon: "bi-file-earmark-pdf-fill",
@@ -234,5 +269,3 @@ const svgData = [
     origDim: 16,
   },
 ];
-
-export { experience, projects, svgData };
