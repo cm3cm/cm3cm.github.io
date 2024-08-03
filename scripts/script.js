@@ -16,10 +16,10 @@ const cardContainer = document.getElementById("cardContainer");
 
 experience.forEach((data) => {
   const card = document.createElement("div");
-  card.className = "card bg-dark";
+  card.className = "card bg-light";
 
   const cardBody = document.createElement("div");
-  cardBody.className = "card-body bg-dark";
+  cardBody.className = "card-body bg-light";
 
   const title = document.createElement("h5");
   title.className = "card-title";
@@ -56,7 +56,7 @@ const projectList = document.getElementById("projectList");
 
 projects.forEach((project) => {
   const listItem = document.createElement("li");
-  listItem.className = "list-group-item text-bg-dark";
+  listItem.className = "list-group-item text-bg-dark bg-light";
 
   const button = document.createElement("button");
   button.className = "btn";
