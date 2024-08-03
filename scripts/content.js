@@ -6,12 +6,15 @@ export const experience = [
     location: "Chicago, IL",
     description: `
                   I joined the Cubs Baseball Systems team, part of the Cubs R&D department.
-                  I built software for internal baseball operations project, such as
-                  designing a new internal webpage for our catching coaches to share and assess in
+                  I built software for internal baseball operations projects, such as
+                  designing a new internal webpage for our catching coaches to share and evaluate in
                   advanced baseball analytics through dynamic tables and charts.
+                  I also worked with the Analytics department to improve our internal models for defense.
                   <br />
                   Primarily I worked in React and Redux, while occassionally programming with Angular.
-                  I scripted SQL queries and Python modules to expand our automated data flow to our databases and caches.
+                  All my front-end code came with a suite of Jest tests.
+                  I scripted PostgresSQL queries and Python modules to expand our automated data flow to our databases and caches.
+                  Additionally, I developed programs to ingest and normalize data from our 3rd-party partners.
                   Throughout this, I followed an Agile process and frequently checked in with my shareholders.
                   `,
   },
